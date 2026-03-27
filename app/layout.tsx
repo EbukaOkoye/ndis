@@ -1,38 +1,38 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Skylight Mental Health | NDIS & Community Support',
-  description: 'Skylight Mental Health delivers NDIS and community mental health support across South Australia. Trauma-informed, recovery-focused, lived experience informed.',
-  generator: 'v0.app',
+  title: "Australian NDIS",
+  description:
+    "Australian NDIS Services is a fast growing community that values people of all ages, abilities and cultures.",
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: "/ndis_logo-removebg.png",
+        media: "(prefers-color-scheme: light)",
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: "/ndis_logo-removebg.png",
+        media: "(prefers-color-scheme: dark)",
       },
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: "/ndis_logo-removebg.png",
+        type: "image/png+xml",
       },
     ],
-    apple: '/apple-icon.png',
+    apple: "/ndis_logo-removebg.png",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -41,5 +41,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

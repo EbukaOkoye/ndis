@@ -50,7 +50,7 @@ export function Overview() {
             className="group flex items-center justify-between p-6 bg-card rounded-lg border border-border hover:border-primary hover:shadow-md transition-all"
           >
             <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-              Explore Mental Health Support
+              Explore NDIS Support
             </span>
             <ArrowRight className="text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
           </Link>
